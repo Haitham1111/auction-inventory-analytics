@@ -1,5 +1,5 @@
-"""
-Auction inventory analytics — LocalAuctions.com Phoenix liquidation results.
+﻿"""
+Auction inventory analytics â€” LocalAuctions.com Phoenix liquidation results.
 
 Reads the raw LocalAuctions.com results exports (Excel, with a few junk header
 rows above the real table), cleans them, and computes headline findings:
@@ -33,7 +33,7 @@ AUCTIONS = {
     "pallets": RAW / "pallets_auction_23166_results.xlsx",
 }
 
-RETAIL_RE = re.compile(r"[Rr]etail\s*\$([\d,]+\.?\d*)")
+RETAIL_RE = re.compile(r"retail\s*\$([\d,]+\.?\d*)", re.IGNORECASE)
 
 
 def load_results(path):
@@ -108,7 +108,7 @@ def main():
             print(f"lots with retail price: {s['lots_with_retail']} | "
                   f"retail total: ${s['retail_total']:,.2f} | "
                   f"avg discount vs retail: {s['retail_discount_pct']}%")
-        print(f"top lot: ${s['top_lot']['hammer_price']:,.0f} — {s['top_lot']['title'][:70]}")
+        print(f"top lot: ${s['top_lot']['hammer_price']:,.0f} â€” {s['top_lot']['title'][:70]}")
         print(f"top buyer spend: buyer {s['top_buyer_by_spend'][0]} "
               f"${s['top_buyer_by_spend'][1]:,.2f}")
         print(f"cleaned csv -> {out.relative_to(ROOT)}\n")
