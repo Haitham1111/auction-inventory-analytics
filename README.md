@@ -53,16 +53,16 @@ Note: `06_category_margin.sql` computes the retail-to-hammer spread (what a rese
 
 ## 4. High-Resolution Dashboard Screenshots
 
-![Auction overview](reports/screenshots/01_auction_overview.png)
+![Auction overview](screenshots/01_auction_overview.png)
 
-![Buyers and retail](reports/screenshots/02_buyers_and_retail.png)
+![Buyers and retail](screenshots/02_buyers_and_retail.png)
 
 Dark and light themes: `reports/themes/`. The 15 DAX measures are in [`reports/dax-measures.md`](reports/dax-measures.md).
 
 ## 5. How to Download and Run
 
 **Power BI dashboard**
-1. Download [`auction-inventory-dashboard.pbix`](auction-inventory-dashboard.pbix) (use the Download/Raw button on GitHub).
+1. Download [`powerbi/auction-inventory-dashboard.pbix`](powerbi/auction-inventory-dashboard.pbix) (use the Download/Raw button on GitHub).
 2. Open in Power BI Desktop. It reads `.\SQLEXPRESS`, database `Auction_Inventory`, view `dbo.v_lots`. Set up the database (below), then Refresh.
 3. Optional themes: View > Themes > Browse for themes, pick a file from `reports/themes/`.
 

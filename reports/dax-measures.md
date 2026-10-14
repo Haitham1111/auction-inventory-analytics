@@ -1,6 +1,6 @@
 # Power BI Model - Auction Inventory Dashboard
 
-`auction-inventory-dashboard.pbix`. Two tables: `FactLots` (168 rows, from SQL Server view `dbo.v_lots`) and `_Measures` (measure container). The measures below were read from the model through TOM (read-only) and checked against `sql/`.
+`powerbi/auction-inventory-dashboard.pbix`. Two tables: `FactLots` (168 rows, from SQL Server view `dbo.v_lots`) and `_Measures` (measure container). The measures below were read from the model through TOM (read-only) and checked against `sql/`.
 
 ## Power Query - `FactLots`
 
